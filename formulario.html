@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        textarea {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+   
+
+
+</head>
+<body>
+  <Form>
+    <label for="nome">Nome:</label>
+    <input type="text" placeholder="Digite seu nome aqui..." name="nome" id="nome"
+    required>
+     <br><br>
+
+    <label for="email">email:</label>
+    <input type="email" placeholder="Digite seu email aqui" name="email" id="email"
+    required>
+     <br><br>
+    
+     <div id="textarea">
+        <label for="participar">O que te motivou a participar do evento? </label>
+        <textarea name="participar" id="participar" cols="30" rows="10" ></textarea>
+     </div>
+  
+     <br><br>
+
+    <label for="Modulos">Selecione seu módulo</label>
+    <select name="mofulos" name="modulos" id="modulos">
+        <option value="Modulo 1">Modulo 1</option>
+        <option value="modulo 2">Modulo 2</option>
+        <option value="modulo 3">Modulo 3</option>
+    </select>
+    <br><br><br>
+     
+    <div>
+        <label for="Senha">Sua senha</label>
+        <input type="password" name="Senha" id="Senha" placeholder="Cadastre sua senha"
+        required>
+    </div>
+     <br>
+    <div>
+        <label for="confirmarsenha"> Confirme sua senha</label>
+        <input type="password" name="Senha" id="confirmarsenha" placeholder="Confirme sua senha">
+    </div>
+    
+    <br><br>
+     
+    <label for="receber">Gostaria de receber emails?</label>
+    <div id="receber">
+        <label for="sim">Sim</label>
+        <input type="radio" id="sim">
+        <label for="nao">Não</label>
+        <input type="radio" id="nao">
+    </div>
+    <br><br>
+
+    <button type="submit" > Confirmar informações</button>
+
+  </Form>
+    
+</body>
+</html>
